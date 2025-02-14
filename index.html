@@ -10,6 +10,24 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Steller main styles -->
 	<link rel="stylesheet" href="assets/css/steller.css">
+	 <style>
+        #dotted::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3) 2px, transparent 2px);
+            background-size: 20px 20px;
+            opacity: 0.3;
+            animation: floatEffect 5s infinite linear;
+        }
+
+        @keyframes floatEffect {
+            0% { transform: translateY(0px) translateX(0px); }
+            50% { transform: translateY(-10px) translateX(10px); }
+            100% { transform: translateY(0px) translateX(0px); }
+        }
+    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
@@ -52,7 +70,7 @@
 
     <!-- Page Header -->
     <header class="header" id="home">
-        <div class="container">
+        <div class="container" id="dotted">
             <div class="infos">
                 <h6 class="subtitle">hello,I'm</h6>
                 <h6 class="title">Naman Bhawsar</h6>
