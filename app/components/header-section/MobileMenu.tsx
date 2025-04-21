@@ -52,7 +52,7 @@ export default function MobileMenu({
         <Link
           className="p-4 flex-1 flex justify-center w-full rounded-xl h-fit text-4xl visited:bg-[#E3D3BE] bg-linear-to-r from-[#d9d9d915] to-[#7373731f] std-backdrop-blur"
           target="_blank"
-          href="www.linkedin.com/in/naman-bhawsar-62285b33a"
+          href="https://www.linkedin.com/in/naman-bhawsar-62285b33a/"
           data-blobity-radius="10"
         >
           <Icon icon="hugeicons:linkedin-01" />
@@ -62,7 +62,7 @@ export default function MobileMenu({
           <Link
             className="p-4 flex justify-center w-full rounded-xl h-fit text-2xl bg-linear-to-r from-[#d9d9d915] to-[#7373731f] std-backdrop-blur"
             target="_blank"
-            href="https://github.com/adex-hub"
+            href="https://github.com/namannb07"
             data-blobity-radius="10"
           >
             <Icon icon="hugeicons:github" />
