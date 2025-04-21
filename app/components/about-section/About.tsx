@@ -32,7 +32,7 @@ export default function About() {
       <div className="grid grid-cols-1 lg:grid-cols-[8.5fr_3.5fr] gap-8 mt-6">
         <div className="grid grid-cols-1 antialiased gap-6 text-white/80 text-xl md:text-2xl">
           <AnimatedBody className="leading-[34px] md:leading-[39px]">
-            I am an MCA student at SGSITS with a passion for technology and innovation. I enjoy exploring new technologies and have experience in building projects like AI-powered surveillance tools, responsive websites, and Python-based applications. I'm eager to learn, grow, and contribute to impactful tech solutions.
+            I am an MCA student at SGSITS with a passion for technology and innovation. I enjoy exploring new technologies and have experience in building projects like AI-powered surveillance tools, responsive websites, and Python-based applications. I am eager to learn, grow, and contribute to impactful tech solutions.
           </AnimatedBody>
         </div>
         <div className="grid grid-cols-1 gap-4">
