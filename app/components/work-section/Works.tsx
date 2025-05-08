@@ -57,6 +57,24 @@ export default function Works() {
       stack: ["Python", "OpenCV", "tKinter", "CNN"],
       img: "/Sign.png",
     },
+    {
+      title: "SafaiSetu",
+      gitLink: "https://github.com/namannb07/SafaiSetu",
+      liveLink: "",
+      about:
+        "SafaiSetu is a JavaFX-based sanitation management app that connects to a MySQL database to help monitor complaints, cleanliness reports, garbage bins, and workers. Designed for smart cities, it streamlines urban cleanliness operations and promotes citizen participation.",
+      stack: ["JavaFX", "Java", "JDBC", "Maven","MySQL"],
+      img: "/Safai.jpg",
+    },
+    {
+      title: "CPU-J",
+      gitLink: "https://github.com/namannb07/CPU-J",
+      liveLink: "",
+      about:
+        "CPU-J is a JavaFX-based desktop application that mimics CPU-Z, providing detailed real-time system information such as CPU usage, memory stats, storage details, network info, sensors, and uptime. It uses the OSHI library to fetch hardware-level data and presents it through a clean, interactive GUI.",
+      stack: ["JavaFX", "Java", "Maven", "OSHI-Operating System and Hardware Information"],
+      img: "/cpu.jpg",
+    },
   ];
 
   const { ref, inView } = useInView({
