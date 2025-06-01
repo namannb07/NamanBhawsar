@@ -7,6 +7,16 @@ const syne = Syne({ subsets: ["latin"] });
 
 const TimelineData = [
   {
+    companyImg: "/gsits.png",
+    jobTitle: "Master of Computer Application (Pursuing)",
+    company: "Shri G S Institute of Technology &  Science",
+    jobType: "Post Graduation",
+    duration: "Sept 2024 - Present",
+    stuffIDid: [
+      "8.64 CGPA (Current)",
+    ],
+  },
+  {
     companyImg: "/ghsc.png",
     jobTitle: "Bachelor of Computer Application",
     company: "Govt Holkar Science College,Indore",
