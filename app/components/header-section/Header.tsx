@@ -39,7 +39,7 @@ export default function Header() {
               href="#work"
               className={`${sectionInView === "work" && "text-white"} `}
             >
-              Education
+              Project
             </Link>
             <Link
               href="#about"
