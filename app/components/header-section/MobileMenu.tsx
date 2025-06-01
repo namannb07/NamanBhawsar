@@ -32,7 +32,7 @@ export default function MobileMenu({
           href="#work"
           className={`${sectionInView === "work" && "text-white"} w-fit`}
         >
-          Work
+          Project
         </Link>
         <Link
           href="#about"
