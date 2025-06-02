@@ -97,7 +97,7 @@ export default function Hero() {
           <span className="bg-linear-to-br bg-clip-text text-transparent from-[#7CC0C4] via-[#548FBA] to-[#3C84C7]">
             Naman Bhawsar
           </span>
-          <p>Python Developer</p>
+          <p>Software Developer</p>
         </motion.h1>
 
         <motion.p
