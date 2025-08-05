@@ -13,7 +13,7 @@ const TimelineData = [
     jobType: "Post Graduation",
     duration: "Sept 2024 - Present",
     stuffIDid: [
-      "8.75 CGPA (Current)",
+      "8.75 CGPA (Till 2nd Sem)",
     ],
   },
   {
