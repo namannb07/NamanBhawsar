@@ -78,7 +78,7 @@ export default function Works() {
     {
       title: "Reactelligence – AI-Powered Chemistry Lab",
       gitLink: "https://github.com/namannb07/Reactelligence",
-      liveLink: "https://reactelligence.streamlit.app/",
+      liveLink: "https://reactelligence.streamlit.app",
       about:
         "Reactelligence is an interactive AI-driven web application that empowers users to analyze molecules, predict chemical properties, and explore reactions. Built with Streamlit, RDKit, and ChemBERTa, it combines cheminformatics with deep learning to assist students, researchers, and chemists in understanding molecular behavior.",
       stack: ["Python", "Streamlit", "RDKit", "ChemBERTa","Pytorch","Pandas & NumPy","Plotly & Matplotlib","scikit-learn"],
