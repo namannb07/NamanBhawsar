@@ -75,6 +75,15 @@ export default function Works() {
       stack: ["JavaFX", "Java", "Maven", "OSHI-Operating System and Hardware Information"],
       img: "/cpu.jpg",
     },
+    {
+      title: "Reactelligence – AI-Powered Chemistry Lab",
+      gitLink: "https://github.com/namannb07/Reactelligence",
+      liveLink: "",
+      about:
+        "Reactelligence is an interactive AI-driven web application that empowers users to analyze molecules, predict chemical properties, and explore reactions. Built with Streamlit, RDKit, and ChemBERTa, it combines cheminformatics with deep learning to assist students, researchers, and chemists in understanding molecular behavior.",
+      stack: ["Python", "Streamlit", "RDKit", "ChemBERTa","Pytorch","Pandas & NumPy","Plotly & Matplotlib","scikit-learn"],
+      img: "/react.jpg",
+    },
   ];
 
   const { ref, inView } = useInView({
