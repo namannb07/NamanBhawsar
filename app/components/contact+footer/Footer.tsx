@@ -12,23 +12,13 @@ export default function Footer() {
   return (
     <section
       id="footer"
-      className="my-6 sm:my-8 text-sm sm:text-base lg:text-lg flex md:justify-between justify-center"
+      className="my-6 sm:my-8 text-sm sm:text-base lg:text-lg flex md:justify-between justify-center text-text-secondary"
     >
-      <p>
+      <p className="font-mono">
         <span className="text-xl sm:text-2xl">&copy;</span> {curYear} NAMAN BHAWSAR
       </p>
-      {/* <Link
-        className="md:flex hidden items-center gap-1 leading-tight"
-        href="#home"
-        data-blobity-offset-x="2"
-        data-blobity-offset-y="0"
-        onClick={() => setSectionInView("home")}
-      >
-        <Icon icon="mdi:arrow-top" className="text-2xl rounded-2xlt" />
-        <p className="underline leading-tight">SCROLL TO TOP</p>
-      </Link> */}
       <Link
-        className="md:flex hidden items-center gap-1 leading-tight"
+        className="md:flex hidden items-center gap-1 leading-tight transition-all duration-300 hover:text-accent-cyan hover:drop-shadow-[0_0_5px_var(--color-accent-cyan)]"
         to="home"
         smooth={true}
         spy={true}
@@ -36,9 +26,8 @@ export default function Footer() {
         href="#home"
         data-blobity-offset-x="2"
         data-blobity-offset-y="0"
-        // onClick={() => setSectionInView("home")}
       >
-        <Icon icon="mdi:arrow-top" className="text-2xl rounded-2xlt" />
+        <Icon icon="mdi:arrow-top" className="text-2xl" />
         <p className="underline leading-tight">SCROLL TO TOP</p>
       </Link>
     </section>

@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <>
       <div className="fixed max-w-[90%] xl:max-w-[1223px] w-full z-10 select-none">
-        <div className="flex justify-between items-center px-6 py-4 rounded-2xl bg-linear-to-r from-[#d9d9d91f] to-[#7373731f] mt-4 sm:mt-8 std-backdrop-blur">
+        <div className="flex justify-between items-center px-6 py-4 rounded-2xl bg-primary/50 mt-4 sm:mt-8 std-backdrop-blur border border-accent-cyan/20">
           <Image
             src="/logo.svg"
             width={32}
@@ -28,37 +28,45 @@ export default function Header() {
             icon={`${menuOpen ? "gg:close" : "lucide:menu"}`}
           />
 
-          <ul className="hidden sm:flex gap-8 lg:gap-12 text-white/25">
+          <ul className="hidden sm:flex gap-8 lg:gap-12 text-text-secondary">
             <Link
               href="#home"
-              className={`${sectionInView === "home" && "text-white"} `}
+              className={`transition-all duration-300 ${
+                sectionInView === "home" && "text-accent-cyan drop-shadow-[0_0_5px_var(--color-accent-cyan)]"
+              } `}
             >
               Home
             </Link>
             <Link
               href="#work"
-              className={`${sectionInView === "work" && "text-white"} `}
+              className={`transition-all duration-300 ${
+                sectionInView === "work" && "text-accent-cyan drop-shadow-[0_0_5px_var(--color-accent-cyan)]"
+              } `}
             >
               Project
             </Link>
             <Link
               href="#about"
-              className={`${sectionInView === "about" && "text-white"} `}
+              className={`transition-all duration-300 ${
+                sectionInView === "about" && "text-accent-cyan drop-shadow-[0_0_5px_var(--color-accent-cyan)]"
+              } `}
             >
               About
             </Link>
             <Link
               href="#contact"
-              className={`${sectionInView === "contact" && "text-white"} `}
+              className={`transition-all duration-300 ${
+                sectionInView === "contact" && "text-accent-cyan drop-shadow-[0_0_5px_var(--color-accent-cyan)]"
+              } `}
             >
               Contact
             </Link>
           </ul>
-          <div className="gap-5 text-xl hidden sm:flex">
-            <Link target="_blank" href="https://www.linkedin.com/in/naman-bhawsar-62285b33a/">
+          <div className="gap-5 text-xl hidden sm:flex text-text-secondary">
+            <Link target="_blank" href="https://www.linkedin.com/in/naman-bhawsar-62285b33a/" className="transition-all duration-300 hover:text-accent-cyan hover:drop-shadow-[0_0_5px_var(--color-accent-cyan)]">
               <Icon icon="hugeicons:linkedin-01" />
             </Link>
-            <Link target="_blank" href="https://github.com/namannb07">
+            <Link target="_blank" href="https://github.com/namannb07" className="transition-all duration-300 hover:text-accent-cyan hover:drop-shadow-[0_0_5px_var(--color-accent-cyan)]">
               <Icon icon="hugeicons:github" />
             </Link>
           </div>

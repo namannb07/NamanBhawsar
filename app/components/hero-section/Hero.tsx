@@ -72,7 +72,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.1, ease: "easeOut" }}
         >
-          <p className="text-white/60 text-xl smm:text-2xl mb-3 smm:mb-0 lg:text-3xl col-span-6">
+          <p className="text-text-secondary text-xl smm:text-2xl mb-3 smm:mb-0 lg:text-3xl col-span-6">
             Hey, there
           </p>
           <motion.div
@@ -89,21 +89,29 @@ export default function Hero() {
           </motion.div>
         </motion.div>
         <motion.h1
-          className="text-[32px] smm:text-[40px] md:text-5xl lg:text-6xl xl:text-7xl leading-tight font-bold"
+          className="text-[32px] smm:text-[40px] md:text-5xl lg:text-6xl xl:text-7xl leading-tight font-bold font-mono"
           initial={{ opacity: 0 }}
           animate={animateIn1}
         >
-          <p className="text-white/60 inline">I&apos;m </p>
-          <span className="bg-linear-to-br bg-clip-text text-transparent from-[#7CC0C4] via-[#548FBA] to-[#3C84C7]">
+          <p className="text-text-secondary inline">I&apos;m </p>
+          <span
+            className="glitch text-accent-cyan"
+            data-text="Naman Bhawsar"
+          >
             Naman Bhawsar
           </span>
-          <p>Software Developer</p>
+          <p
+            className="glitch text-accent-cyan"
+            data-text="Software Developer"
+          >
+            Software Developer
+          </p>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={animateIn2}
-          className="text-white/40  text-xl smm:text-2xl lg:text-3xl xl:text-4xl mt-3 smm:mt-6 "
+          className="text-text-secondary text-xl smm:text-2xl lg:text-3xl xl:text-4xl mt-3 smm:mt-6 "
         >
           currently focused on building user experiences that drive growth.
         </motion.p>
@@ -114,7 +122,7 @@ export default function Hero() {
         <motion.div
           ref={imgRef}
           style={{ rotate }}
-          className="h-image flex items-center w-[330px] h-[400px] xl:w-[390px] xl:h-[470px] justify-center relative"
+          className="h-image flex items-center w-[330px] h-[400px] xl:w-[390px] xl:h-[470px] justify-center relative border border-accent-magenta/50 rounded-lg shadow-[0_0_15px_var(--color-accent-magenta)]"
           initial={{ opacity: 0 }}
           animate={animateIn1}
         >
@@ -123,7 +131,7 @@ export default function Hero() {
             priority
             fill
             alt="Ade's picture"
-            className="bg-image-radial object-cover"
+            className="object-cover rounded-lg"
           />
         </motion.div>
       </div>

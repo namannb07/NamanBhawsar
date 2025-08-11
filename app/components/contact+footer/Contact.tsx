@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { Syne } from "next/font/google";
 import { useView } from "@/contexts/ViewContext";
 
 // @ts-ignore
@@ -14,8 +13,6 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-const syne = Syne({ subsets: ["latin"] });
 
 export default function Contact() {
   const { setSectionInView } = useView();
@@ -66,7 +63,7 @@ export default function Contact() {
             pauseOnHover: true,
             draggable: true,
             theme: "dark",
-            className: `custom-toast font-kumbhSans`,
+            className: `custom-toast font-sans`,
           });
           reset();
           setTimeout(() => setFormDisplay(!formDisplay), 5000);
@@ -81,7 +78,7 @@ export default function Contact() {
             pauseOnHover: true,
             draggable: true,
             theme: "dark",
-            className: `custom-toast font-kumbhSans`,
+            className: `custom-toast font-sans`,
           });
         }
       );
@@ -99,13 +96,11 @@ export default function Contact() {
               : "perspective(300px) rotateY(-360deg)"
           }`,
         }}
-        className={`overflow-y-hidden card mt-12 sm:mt-16 md:mt-[100px] px-6 pb-4 md:pb-10 lg:pb-12 flex flex-col lg:items-center lg:flex-row justify-between rounded-2xl bg-linear-to-r from-[#d9d9d91f] to-[#7373731f]`}
+        className={`overflow-y-hidden card mt-12 sm:mt-16 md:mt-[100px] px-6 pb-4 md:pb-10 lg:pb-12 flex flex-col lg:items-center lg:flex-row justify-between rounded-2xl bg-primary/50 border border-accent-yellow/30 shadow-[0_0_15px_var(--color-accent-yellow)]`}
       >
         {!formDisplay ? (
           <div
-            className={` ${
-              syne.className
-            } flex justify-between items-center w-full duration-1000 ${
+            className={`flex justify-between items-center w-full duration-1000 ${
               formDisplay && "opacity-0"
             }`}
           >
@@ -113,7 +108,7 @@ export default function Contact() {
               <AnimatedTitle
                 wordSpace={"mr-2 md:mr-[12px]"}
                 charSpace={"mr-[0.001em]"}
-                className="text-xl sm:text-2xl md:text-[32px] lg:text-[40px] font-bold pt-4 md:pt-10 lg:pt-12 "
+                className="text-xl sm:text-2xl md:text-[32px] lg:text-[40px] font-bold pt-4 md:pt-10 lg:pt-12 font-mono text-accent-yellow"
               >
                 GOT A PROJECT IN MIND?
               </AnimatedTitle>
@@ -123,7 +118,7 @@ export default function Contact() {
                   onClick={() => {
                     setFormDisplay(!formDisplay);
                   }}
-                  className="text-xl sm:text-2xl md:text-[32px] w-fit underline lg:text-[40px] font-bold leading-tight hidden sm:block lg:hidden"
+                  className="text-xl sm:text-2xl md:text-[32px] w-fit underline lg:text-[40px] font-bold leading-tight hidden sm:block lg:hidden text-accent-yellow"
                 >
                   CONTACT ME
                 </span>
@@ -131,7 +126,7 @@ export default function Contact() {
             </div>
             <Link href="#footer">
               <button
-                className={`text-base ml-auto mt-6 lg:ml-0 block sm:hidden lg:block lg:text-2xl font-semibold px-4 py-2 md:px-3 lg:py-4 lg:mt-12 rounded-xl border-2 border-white leading-none ${
+                className={`text-base ml-auto mt-6 lg:ml-0 block sm:hidden lg:block lg:text-2xl font-semibold px-4 py-2 md:px-3 lg:py-4 lg:mt-12 rounded-xl border-2 border-accent-yellow leading-none transition-all duration-300 hover:shadow-[0_0_15px_var(--color-accent-yellow)] ${
                   viewCount <= 1 && "duration-500 delay-[1500ms]"
                 } ${
                   inView
@@ -167,7 +162,7 @@ export default function Contact() {
                 <Link
                   href="mailto:namannb45@gmail.com"
                   target="_blank"
-                  className={`font-bold uppercase ${syne.className} underline opacity-50`}
+                  className="font-bold uppercase font-mono underline text-text-secondary/70 hover:text-accent-yellow"
                 >
                   E-Mail me?
                 </Link>
@@ -178,19 +173,19 @@ export default function Contact() {
                     setFormDisplay(false);
                     reset();
                   }}
-                  className="text-2xl opacity-50"
+                  className="text-2xl text-text-secondary/70 hover:text-accent-yellow"
                 />
               </div>
               <div className="flex items-center h-full gap-2 w-full">
                 <form
                   ref={formRef}
                   onSubmit={handleSubmit(onSubmit)}
-                  className={`back w-full flex flex-col gap-3 grow-2 basis-0`}
+                  className="back w-full flex flex-col gap-3 grow-2 basis-0 font-mono"
                 >
                   <div className="flex gap-1 flex-col">
                     <label
                       htmlFor="userName"
-                      className="opacity-70 text-sm lg:text-base "
+                      className="text-text-secondary/80 text-sm lg:text-base"
                     >
                       Name
                     </label>
@@ -204,7 +199,7 @@ export default function Contact() {
                           message: "Please enter a valid name.",
                         },
                       })}
-                      className="bg-transparent rounded-md border border-[#737373c4] focus:border-[#9f9d9dc4] outline-hidden py-1 pl-2"
+                      className="bg-primary/50 rounded-md border border-accent-yellow/30 focus:border-accent-yellow focus:shadow-[0_0_10px_var(--color-accent-yellow)] outline-none py-2 px-3 transition-all duration-300"
                     />
                     {errors?.userName && (
                       <span className="text-red-400 text-xs">
@@ -215,7 +210,7 @@ export default function Contact() {
                   <div className="flex gap-1 flex-col">
                     <label
                       htmlFor="userEmail"
-                      className="opacity-70 text-sm lg:text-base "
+                      className="text-text-secondary/80 text-sm lg:text-base"
                     >
                       Email
                     </label>
@@ -229,7 +224,7 @@ export default function Contact() {
                           message: "Please provide a valid email address",
                         },
                       })}
-                      className="bg-transparent rounded-md border border-[#737373c4] focus:border-[#9f9d9dc4] outline-hidden py-1 pl-2"
+                      className="bg-primary/50 rounded-md border border-accent-yellow/30 focus:border-accent-yellow focus:shadow-[0_0_10px_var(--color-accent-yellow)] outline-none py-2 px-3 transition-all duration-300"
                     />
                     {errors?.userEmail && (
                       <span className="text-red-400 text-xs">
@@ -240,7 +235,7 @@ export default function Contact() {
                   <div className="flex gap-1 flex-col">
                     <label
                       htmlFor="userMessage"
-                      className="opacity-70 text-sm lg:text-base"
+                      className="text-text-secondary/80 text-sm lg:text-base"
                     >
                       Message
                     </label>
@@ -251,7 +246,7 @@ export default function Contact() {
                       })}
                       rows={4}
                       cols={50}
-                      className="bg-transparent rounded-md border border-[#737373c4] focus:border-[#9f9d9dc4] outline-hidden py-1 pl-2"
+                      className="bg-primary/50 rounded-md border border-accent-yellow/30 focus:border-accent-yellow focus:shadow-[0_0_10px_var(--color-accent-yellow)] outline-none py-2 px-3 transition-all duration-300"
                     />
                     {errors?.userMessage && (
                       <span className="text-red-400 text-xs">
@@ -260,7 +255,7 @@ export default function Contact() {
                     )}
                   </div>
                   <button
-                    className={`rounded-md bg-linear-to-r from-[#d9d9d91f] to-[#7373731f] py-3 px-5 ${syne.className} font-bold uppercase mt-4`}
+                    className="rounded-md bg-primary/50 border border-accent-yellow/50 py-3 px-5 font-bold uppercase mt-4 text-accent-yellow shadow-[0_0_10px_var(--color-accent-yellow)] transition-all duration-300 hover:shadow-[0_0_20px_var(--color-accent-yellow)]"
                   >
                     Send
                   </button>

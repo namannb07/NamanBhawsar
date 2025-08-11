@@ -1,9 +1,6 @@
 "use client";
-import { Syne } from "next/font/google";
 import Title from "../ui/Title";
 import TimelineItem from "./TimelineItem";
-
-const syne = Syne({ subsets: ["latin"] });
 
 const TimelineData = [
   {
@@ -53,10 +50,7 @@ export default function Timeline() {
     <div className="mt-10 md:mt-[110px]">
       <Title>Education</Title>
 
-      {/* THE THING, AFTER WHICH I WOULD DETERMINE THE HEIGHT */}
-      <div className="flex mt-6 gap-4 pl-3">
-        <div className="w-3 h-auto bg-linear-to-b from-white to-transparent" />
-
+      <div className="flex mt-6 gap-4 pl-3 border-l-2 border-accent-cyan/30">
         <div className="flex flex-col gap-10">
           {TimelineData.map((item, index) => (
             <TimelineItem

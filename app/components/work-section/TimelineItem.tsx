@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import styles from "./TimelineItem.module.css";
 
 // @ts-ignore
 import "intersection-observer";
@@ -19,7 +18,7 @@ export default function TimelineItem({
   jobTitle: string;
   company: string;
   jobType: string;
-  duration: string;
+  duration:string;
   stuffIDid: string[];
 }) {
   const { ref, inView } = useInView({
@@ -31,42 +30,41 @@ export default function TimelineItem({
   return (
     <div
       ref={ref}
-      className={`flex items-start gap-4 relative duration-1000 ${
+      className={`relative duration-1000 ${
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"
       }`}
     >
-      <Image
-        src="/position-icon.svg"
-        width={24}
-        height={24}
-        alt="current"
-        className="absolute -translate-x-[29px] sm:-translate-x-8 left-0"
-      />
+      <div className="absolute -left-8 top-2">
+        <div className="w-6 h-6 rounded-full bg-accent-cyan shadow-[0_0_10px_var(--color-accent-cyan)]"></div>
+      </div>
+      <div className="bg-primary/50 border border-accent-cyan/30 rounded-2xl p-4 sm:p-6">
+        <div className="grid grid-cols-5 sm:flex items-start gap-4">
+          <Image
+            src={companyImg}
+            width={70}
+            height={70}
+            alt="company-image"
+            className="col-span-1 rounded-md"
+          />
 
-      <div className="grid grid-cols-5 sm:flex items-start gap-4 pl-4">
-        <Image
-          src={companyImg}
-          width={70}
-          height={70}
-          alt="company-image"
-          className="col-span-1"
-        />
+          {/* ALL THE TEXT*/}
+          <div className="col-span-4">
+            <div className="leading-tight">
+              <h1 className="text-2xl sm:text-[2rem] font-bold font-mono text-accent-cyan">{jobTitle}</h1>
+              <p className="text-base sm:text-lg font-bold my-2 sm:my-3 text-text-secondary">
+                {company} | {jobType}
+              </p>
+            </div>
+            <p className="text-base sm:text-lg text-text-secondary/70 my-3">{duration}</p>
 
-        {/* ALL THE TEXT*/}
-        <div className={`${styles.timeline} col-span-4`}>
-          <div className="leading-tight">
-            <h1 className="text-2xl sm:text-[2rem] font-bold">{jobTitle}</h1>
-            <p className="text-base sm:text-lg font-bold my-2 sm:my-3">
-              {company} | {jobType}
-            </p>
+            <ul className="flex flex-col gap-2 pl-4">
+              {stuffIDid.map((stuff, index) => (
+                <li key={index} className="relative before:content-['▸'] before:absolute before:left-[-1em] before:text-accent-cyan">
+                  {stuff}
+                </li>
+              ))}
+            </ul>
           </div>
-          <p className="text-base sm:text-lg text-white/60 my-3">{duration}</p>
-
-          <ul>
-            {stuffIDid.map((stuff, index) => (
-              <li key={index}>{stuff}</li>
-            ))}
-          </ul>
         </div>
       </div>
     </div>
