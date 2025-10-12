@@ -31,6 +31,15 @@ export default function Works() {
       img: "/Sign.png",
     },
     {
+      title: "StyleBuddy – AI-Powered Personal Style Assistant",
+      gitLink: "https://github.com/namannb07/stylebuddy",
+      liveLink: "https://stylebuddy.netlify.app",
+      about:
+        "StyleBuddy is a modern web application that provides AI-driven fashion guidance. Users can get instant feedback on outfits, personalized style recommendations, and hairstyle suggestions. Built with Next.js, Genkit, and Firebase, it showcases how AI enhances personal styling experiences.",
+      stack: ["Next.js", "TypeScript", "Google Genkit", "Tailwind CSS", "shadcn/ui", "Radix UI", "Firebase"],
+      img: "/stylebuddy.png",
+    },
+    {
       title: "CPU-J",
       gitLink: "https://github.com/namannb07/CPU-J",
       liveLink: "",
