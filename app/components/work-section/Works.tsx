@@ -13,6 +13,42 @@ export default function Works() {
 
   const works = [
     {
+      title: "Reactelligence – AI-Powered Chemistry Lab",
+      gitLink: "https://github.com/namannb07/Reactelligence",
+      liveLink: "https://reactelligence.streamlit.app",
+      about:
+        "Reactelligence is an interactive AI-driven web application that empowers users to analyze molecules, predict chemical properties, and explore reactions. Built with Streamlit, RDKit, and ChemBERTa, it combines cheminformatics with deep learning to assist students, researchers, and chemists in understanding molecular behavior.",
+      stack: ["Python", "Streamlit", "RDKit", "ChemBERTa","Pytorch","Pandas & NumPy","Plotly & Matplotlib","scikit-learn"],
+      img: "/react.jpg",
+    },
+    {
+      title: "Sign Language Recognition System (In Progress)",
+      gitLink: "",
+      liveLink: "",
+      about:
+        "Developing an AI-powered system to recognize and translate sign language gestures into text or speech. Aims to bridge the communication gap for hearing-impaired individuals using real-time hand gesture recognition through computer vision and machine learning.",
+      stack: ["Python", "OpenCV", "tKinter", "CNN"],
+      img: "/Sign.png",
+    },
+    {
+      title: "CPU-J",
+      gitLink: "https://github.com/namannb07/CPU-J",
+      liveLink: "",
+      about:
+        "CPU-J is a JavaFX-based desktop application that mimics CPU-Z, providing detailed real-time system information such as CPU usage, memory stats, storage details, network info, sensors, and uptime. It uses the OSHI library to fetch hardware-level data and presents it through a clean, interactive GUI.",
+      stack: ["JavaFX", "Java", "Maven", "OSHI-Operating System and Hardware Information"],
+      img: "/cpu.jpg",
+    },
+     {
+      title: "Student Performance Dashboard",
+      gitLink: "https://github.com/namannb07/ssvm",
+      liveLink: "",
+      about:
+        "Developed a dynamic dashboard system for tracking and visualizing student performance. Enabled real-time score updates for students and provided parents with easy access to their child’s academic progress, facilitating transparent evaluation and better academic support.",
+      stack: ["HTML", "CSS", "Javascript", "Tailwindcss","Php","MySQL"],
+      img: "/performance.png",
+    },
+    {
       title: "SSVM School Website",
       gitLink: "https://github.com/namannb07/ssvm",
       liveLink: "",
@@ -30,15 +66,7 @@ export default function Works() {
       stack: ["HTML", "CSS", "JavaScript", "Php","MySQL"],
       img: "/exercisetracker.jpg",
     },
-    {
-      title: "Student Performance Dashboard",
-      gitLink: "https://github.com/namannb07/ssvm",
-      liveLink: "",
-      about:
-        "Developed a dynamic dashboard system for tracking and visualizing student performance. Enabled real-time score updates for students and provided parents with easy access to their child’s academic progress, facilitating transparent evaluation and better academic support.",
-      stack: ["HTML", "CSS", "Javascript", "Tailwindcss","Php","MySQL"],
-      img: "/performance.png",
-    },
+   
     // {
     //   title: "Yourtodo",
     //   gitLink: "https://github.com/adex-hub/Yourtodo",
@@ -48,15 +76,7 @@ export default function Works() {
     //   stack: ["react", "javascript", "figma", "sass"],
     //   img: "/todo.svg",
     // },
-    {
-      title: "Sign Language Recognition System (In Progress)",
-      gitLink: "",
-      liveLink: "",
-      about:
-        "Developing an AI-powered system to recognize and translate sign language gestures into text or speech. Aims to bridge the communication gap for hearing-impaired individuals using real-time hand gesture recognition through computer vision and machine learning.",
-      stack: ["Python", "OpenCV", "tKinter", "CNN"],
-      img: "/Sign.png",
-    },
+    
     {
       title: "SafaiSetu",
       gitLink: "https://github.com/namannb07/SafaiSetu",
@@ -66,24 +86,7 @@ export default function Works() {
       stack: ["JavaFX", "Java", "JDBC", "Maven","MySQL"],
       img: "/Safai.jpg",
     },
-    {
-      title: "CPU-J",
-      gitLink: "https://github.com/namannb07/CPU-J",
-      liveLink: "",
-      about:
-        "CPU-J is a JavaFX-based desktop application that mimics CPU-Z, providing detailed real-time system information such as CPU usage, memory stats, storage details, network info, sensors, and uptime. It uses the OSHI library to fetch hardware-level data and presents it through a clean, interactive GUI.",
-      stack: ["JavaFX", "Java", "Maven", "OSHI-Operating System and Hardware Information"],
-      img: "/cpu.jpg",
-    },
-    {
-      title: "Reactelligence – AI-Powered Chemistry Lab",
-      gitLink: "https://github.com/namannb07/Reactelligence",
-      liveLink: "https://reactelligence.streamlit.app",
-      about:
-        "Reactelligence is an interactive AI-driven web application that empowers users to analyze molecules, predict chemical properties, and explore reactions. Built with Streamlit, RDKit, and ChemBERTa, it combines cheminformatics with deep learning to assist students, researchers, and chemists in understanding molecular behavior.",
-      stack: ["Python", "Streamlit", "RDKit", "ChemBERTa","Pytorch","Pandas & NumPy","Plotly & Matplotlib","scikit-learn"],
-      img: "/react.jpg",
-    },
+    
   ];
 
   const { ref, inView } = useInView({
