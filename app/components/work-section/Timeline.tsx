@@ -7,7 +7,7 @@ const syne = Syne({ subsets: ["latin"] });
 
 const TimelineData = [
   {
-    companyImg: "/sgsits.jpg",
+    companyImg: "/sgsits.png",
     jobTitle: "Master of Computer Application (Pursuing)",
     company: "Shri G S Institute of Technology &  Science",
     jobType: "Post Graduation",
