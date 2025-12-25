@@ -62,7 +62,10 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "Re6_RGBe5cplEPEQLJMbb8HAovD3iVbmjjLPoSJOwWk",
+    google: [
+      "Re6_RGBe5cplEPEQLJMbb8HAovD3iVbmjjLPoSJOwWk",
+      "pKnN4TUypkwJ_8zMKTQCsI6aF_i44YKYQwNoHMSXTl4",
+    ],
   },
   category: "technology",
 };
