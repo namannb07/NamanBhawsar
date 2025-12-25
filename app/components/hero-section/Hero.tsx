@@ -119,10 +119,10 @@ export default function Hero() {
           animate={animateIn1}
         >
           <Image
-            src="/naman.jpg"
+            src="/Naman.jpg"
             priority
             fill
-            alt="Ade's picture"
+            alt="Naman's picture"
             className="bg-image-radial object-cover"
           />
         </motion.div>
