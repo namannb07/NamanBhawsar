@@ -10,9 +10,9 @@ import { ViewProvider } from "@/contexts/ViewContext";
 const kumbhSans = Kumbh_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "NAMAN BHAWSAR",
+  title: "Naman Bhawsar | Software Developer",
   description:
-    "Description update hoga jald hi",
+    "Naman Bhawsar is a Software Developer currently focused on building user experiences that drive growth. Explore my portfolio to see my work.",
   keywords: [
     "frontend",
     "react",
@@ -22,30 +22,24 @@ export const metadata: Metadata = {
     "frontend engineer",
     "developer portfolio",
     "creative development",
-    "nigeria",
     "software",
     "software developer",
     "software engineer",
     "portfolio",
+    "Naman Bhawsar",
   ],
   openGraph: {
-    title: "Naman Bhawsar",
+    title: "Naman Bhawsar | Software Developer",
     description:
-      "Jald hi update karunga",
-    url: "https://www.adeolabadero.me",
-    siteName: "www.adeolabadero.me",
+      "Naman Bhawsar is a Software Developer currently focused on building user experiences that drive growth. Explore my portfolio to see my work.",
+    url: "https://github.com/namannb07",
+    siteName: "Naman Bhawsar Portfolio",
     images: [
       {
-        url: "https://i.ibb.co/FKMqc28/adeola-badero.png",
+        url: "/Naman.jpg",
         width: 1200,
         height: 630,
-        alt: "Adeola Badero — Frontend Software Engineer",
-      },
-      {
-        url: "https://i.ibb.co/Y8hBTR4/ade-800.png",
-        width: 800,
-        height: 800,
-        alt: "Adeola Badero — Frontend Software Engineer",
+        alt: "Naman Bhawsar — Software Developer",
       },
     ],
     locale: "en-US",
@@ -53,11 +47,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adeola Badero — Software Engineer",
+    title: "Naman Bhawsar | Software Developer",
     description:
-      "Frontend Engineer at Bluechip Technologies, passionate about crafting next-gen software. I drive growth by crafting user experiences that blend aesthetics with functionality through my design and development skills. I thrive on turning ideas into seamless digital solutions.",
-    creator: "@Ade_the_great",
-    images: ["https://i.ibb.co/FKMqc28/adeola-badero.png"],
+      "Naman Bhawsar is a Software Developer currently focused on building user experiences that drive growth. Explore my portfolio to see my work.",
+    images: ["/Naman.jpg"],
   },
   robots: {
     index: true,
@@ -67,6 +60,9 @@ export const metadata: Metadata = {
       index: true,
       "max-image-preview": "large",
     },
+  },
+  verification: {
+    google: "Re6_RGBe5cplEPEQLJMbb8HAovD3iVbmjjLPoSJOwWk",
   },
   category: "technology",
 };
