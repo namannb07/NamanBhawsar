@@ -91,32 +91,32 @@ export default function Hero() {
             </motion.div>
           </motion.div>
           <motion.h1
-            className="text-[40px] sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-none font-extrabold tracking-tight uppercase"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-tight sm:leading-none font-extrabold tracking-tight uppercase"
             initial={{ opacity: 0 }}
             animate={animateIn1}
           >
-            <span className="block text-white/60 text-[0.5em] tracking-normal capitalize mb-2">I&apos;m</span>
-            <span className="bg-linear-to-br bg-clip-text text-transparent from-[#7CC0C4] via-[#548FBA] to-[#3C84C7] block">
+            <span className="block text-white/60 text-[0.4em] sm:text-[0.5em] tracking-normal capitalize mb-1 sm:mb-2">I&apos;m</span>
+            <span className="bg-linear-to-br bg-clip-text text-transparent from-[#7CC0C4] via-[#548FBA] to-[#3C84C7] block text-[1em]">
               Naman <br className="hidden sm:block"/> Bhawsar
             </span>
-            <span className="block text-[0.4em] font-light text-white/70 mt-4 tracking-normal capitalize">Software Developer</span>
+            <span className="block text-[0.3em] sm:text-[0.4em] font-light text-white/70 mt-2 sm:mt-4 tracking-normal capitalize">Software Developer</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0 }}
             animate={animateIn2}
-            className="text-white/40 text-xl smm:text-2xl lg:text-3xl xl:text-4xl mt-3 smm:mt-6 max-w-2xl"
+            className="text-white/40 text-base sm:text-xl smm:text-2xl lg:text-3xl xl:text-4xl mt-3 smm:mt-6 max-w-2xl"
           >
             currently focused on building user experiences that drive growth.
           </motion.p>
         </div>
 
         {/* IMAGE */}
-        <div data-blobity-tooltip="Soft man">
+        <div data-blobity-tooltip="Soft man" className="mt-8 sm:mt-0">
           <motion.div
             ref={imgRef}
             style={{ rotate }}
-            className="h-image flex items-center w-[330px] h-[400px] xl:w-[390px] xl:h-[470px] justify-center relative"
+            className="h-image flex items-center w-[250px] h-[300px] sm:w-[330px] sm:h-[400px] xl:w-[390px] xl:h-[470px] justify-center relative mx-auto sm:mx-0"
             initial={{ opacity: 0 }}
             animate={animateIn1}
           >
@@ -131,11 +131,11 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-0 w-full z-0 opacity-20 pointer-events-none">
+      <div className="absolute bottom-4 sm:bottom-10 left-0 w-full z-0 opacity-20 pointer-events-none">
         <Marquee
           text="AVAILABLE FOR WORK — CREATIVE DEVELOPER — FRONTEND ENGINEER — "
           className="text-white"
-          itemClassName="text-6xl sm:text-8xl font-bold uppercase"
+          itemClassName="text-4xl sm:text-6xl md:text-8xl font-bold uppercase"
         />
       </div>
     </section>

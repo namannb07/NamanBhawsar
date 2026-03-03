@@ -45,11 +45,11 @@ export default function FolioCard({
         className="rounded-[16px] w-full lg:col-span-5 object-cover"
       />
       <div className="flex flex-col gap-4 lg:col-span-7">
-        <div className="flex items-center justify-between">
-          <h2 className="text-4xl sm:text-5xl xl:text-6xl font-bold uppercase leading-none">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <h2 className="text-3xl sm:text-5xl xl:text-6xl font-bold uppercase leading-none">
             {title}
           </h2>
-          <div className="flex gap-3 md:gap-4 text-2xl sm:text-3xl xl:text-4xl">
+          <div className="flex gap-3 md:gap-4 text-xl sm:text-3xl xl:text-4xl">
             <Link
               href={liveLink}
               className="rounded-full bg-icon-radial p-3 hover:bg-red"
