@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&family=Syne:wght@400;600;700;800&display=swap');
 
 :root {
   --bg-color: #030303;
@@ -8,8 +8,8 @@
   --accent-hover: #7c3aed;
   --glass-bg: rgba(255, 255, 255, 0.02);
   --glass-border: rgba(255, 255, 255, 0.05);
-  --font-main: 'Outfit', sans-serif;
-  --font-heading: 'Space Grotesk', sans-serif;
+  --font-main: 'Manrope', sans-serif;
+  --font-heading: 'Syne', sans-serif;
   --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 

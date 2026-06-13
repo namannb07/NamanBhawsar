@@ -25,8 +25,8 @@ export default function Navbar() {
   return (
     <nav ref={ref} className={`navbar drop-down-wrapper ${inView ? 'is-visible' : ''} ${scrolled ? 'scrolled glass-panel' : ''}`}>
       <div className="container nav-container">
-        <a href="#home" className="nav-logo">
-          NB<span className="text-gradient">.</span>
+        <a href="#home" className="nav-logo" style={{ display: 'flex', alignItems: 'center' }}>
+          <img src="/logo.svg" alt="logo" width="40" height="40" />
         </a>
         
         {/* Hamburger Icon */}
