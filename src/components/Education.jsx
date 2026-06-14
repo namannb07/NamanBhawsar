@@ -7,7 +7,7 @@ export default function Education() {
 
   const education = [
     {
-      degree: "Master of Computer Application (Pursuing)",
+      degree: "Master of Computer Application",
       school: "Shri G S Institute of Technology & Science",
       duration: "Sept 2024 - Present",
       score: "8.63 CGPA"
