@@ -10,7 +10,7 @@ export default function Education() {
       degree: "Master of Computer Application",
       school: "Shri G S Institute of Technology & Science",
       duration: "Sept 2024 - June 2026",
-      score: "8.63 CGPA"
+      score: "8.72 CGPA"
     },
     {
       degree: "Bachelor of Computer Application",
